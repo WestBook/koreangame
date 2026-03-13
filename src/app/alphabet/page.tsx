@@ -58,8 +58,8 @@ export default function AlphabetPage() {
                                                 whileTap={{ scale: 0.95 }}
                                                 onClick={() => handleClick(h)}
                                                 className={`aspect-square rounded-2xl flex flex-col items-center justify-center transition-all ${isActive
-                                                        ? "bg-violet-600 border-violet-400 text-white shadow-[0_0_20px_rgba(139,92,246,0.5)] border-2 scale-110 z-10"
-                                                        : "bg-slate-800/80 border-white/5 border hover:border-violet-500/50 hover:bg-slate-700 text-slate-300"
+                                                    ? "bg-violet-600 border-violet-400 text-white shadow-[0_0_20px_rgba(139,92,246,0.5)] border-2 scale-110 z-10"
+                                                    : "bg-slate-800/80 border-white/5 border hover:border-violet-500/50 hover:bg-slate-700 text-slate-300"
                                                     }`}
                                             >
                                                 <span className="text-3xl font-bold mb-1">{h.char}</span>
@@ -106,7 +106,7 @@ export default function AlphabetPage() {
 
                                     <button
                                         onClick={() => playAudio(activeChar.char)}
-                                        className="flexItems-center justify-center gap-2 w-full py-4 rounded-xl bg-violet-600 hover:bg-violet-500 transition-colors text-white font-medium"
+                                        className="flex items-center justify-center gap-2 w-full py-4 rounded-xl bg-violet-600 hover:bg-violet-500 transition-colors text-white font-medium"
                                     >
                                         <Volume2 size={20} /> 再次聆聽發音
                                     </button>
